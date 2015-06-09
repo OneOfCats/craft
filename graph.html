@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Graph View</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-rounded-x=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+
+    <!-- CSS Page Style -->    
+    <link rel="stylesheet" href="assets/css/pages/graph.css">
+
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body>
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right"> 
+                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="#">Register</a></li> 
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/logo-default.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->    
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Industry view: FinTech</h1>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Grid ===-->
+    <div class="grey companies">
+	    <div class="container content">
+	        <div class="row">
+	            <div class="col-md-3 filters">
+	                        <form class="sky-form company-filter" id="sky-form4" action="" novalidate="novalidate">
+                                <a href="#" data-remote="true" class="btn-u btn-sm pull-left toggle-filters"><i class="fa fa-outdent"></i></a>
+	                            <header>Search companies</header>
+	                            
+	                            <fieldset><section><label id="ul-industry" class="select"><select name="company[industry_id]" id="company_industry_id"><option value=""></option>
+								<option value="1">Music</option>
+								<option value="2">Video</option>
+								<option value="4">News</option>
+								<option value="5">Enterprise Software</option>
+								<option value="6">FinTech</option>
+								<option value="9">Healthcare</option>
+								<option value="3" selected="selected">On-Demand Mobile Services</option>
+								<option value="10">Fashion</option>
+								<option value="11">EdTech</option></select><i></i></label></section><section><label id="ul-category" class="select"><select name="company[category_id]" id="company_category_id"><option value="">All</option>
+								<option value="12">Transportation</option>
+								<option value="13">Travel / Hospitality</option>
+								<option value="14">Delivery &amp; Logistics</option>
+								<option value="15">Food &amp; Beverage</option>
+								<option value="16">Dining and Drinks</option>
+								<option value="17">Home Services</option>
+								<option value="18">Health &amp; Beauty</option>
+								<option value="19">Entertaiment</option></select><i></i></label></section><section><div class="headline"><h4>Location</h4></div><div id="ul-location" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[location[All]]" id="location_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[New York]]" id="" checked="checked" class="checked"><i></i>New York</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[SF Bay Area]]" id="" checked="checked" class="checked"><i></i>SF Bay Area</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[London]]" id="" checked="checked" class="checked"><i></i>London</label></div></div></section><section><div class="headline"><h4>Size</h4></div><div id="ul-size" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[size[All]]" id="company_size_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[&lt;20]]" id="company_size__20" checked="checked" class="checked"><i></i>&lt;20</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[20-99]]" id="company_size_20-99" checked="checked" class="checked"><i></i>20-99</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[100-499]]" id="company_size_100-499" checked="checked" class="checked"><i></i>100-499</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[500+]]" id="company_size_500_" checked="checked" class="checked"><i></i>500+</label></div></div></section></fieldset>
+	                            <footer>
+	                                <button class="btn-u btn-u-lg btn-block" type="submit">Search</button>
+	                            </footer>
+	                        </form>
+	            </div>
+	            <div class="col-md-9 graph">
+		            <div id="results">
+		            	<p class="clearfix views"><a href="#" data-remote="true" class="btn-u btn-sm pull-right">Table view</a><a href="#" data-remote="true" class="btn-u btn-sm pull-right">Grid view</a></p>
+		            	<div class="grid">
+			            	<div class="row">
+				                <div class="col-md-12">
+				                <div id="container"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	    </div><!--/container-->
+    </div>
+    <!--=== End Content Part ===-->
+
+<!--=== Footer ===-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- About -->
+                    <div class="headline"><h4>About</h4></div>  
+                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                    <!-- End About -->
+
+                    <!-- Monthly Newsletter -->
+                    <div class="headline"><h4>Newsletter</h4></div> 
+                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                    <form class="footer-subsribe">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email Address">                            
+                            <span class="input-group-btn">
+                                <button class="btn-u" type="button">Subscribe</button>
+                            </span>
+                        </div>                  
+                    </form>                         
+                    <!-- End Monthly Newsletter -->
+                </div><!--/col-md-4-->  
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- Recent Blogs -->
+                    <div class="posts">
+                        <div class="headline"><h4>Recent Tweets</h4></div>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                            <dd>
+                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                            <dd>
+                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                            <dd>
+                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                            <dd>
+                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- End Recent Blogs -->                    
+                </div><!--/col-md-4-->
+
+                <div class="col-md-4">
+                    <!-- Contact Us -->
+                    <div class="headline"><h4>Send Feedback</h4></div> 
+                    <form class="quick-contact md-margin-bottom-40">
+                        <label>Name</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Email <span class="color-red">*</span></label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Message</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>                
+                        </div>
+                        
+                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                    </form>
+                    <!-- End Contact Us -->
+                </div><!--/col-md-4-->
+            </div>
+        </div> 
+    </div>     
+    <!--=== End Footer ===-->
+
+    <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">                     
+                        <p>
+                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="col-md-6">  
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
+                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
+                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
+                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div> 
+    </div><!--/copyright-->
+</div><!--/End Wrapepr-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
+<script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript">
+$(function() {
+    
+    // theme (style) specifying
+    Highcharts.setOptions(style);
+
+    // example data specifying
+    options.series = [{data: [
+        {name:'logo224',x:29,y:25},
+        {name:'logo200',x:34,y:16},
+        {name:'logo202',x:46,y:14},
+        {name:'logo229',x:49,y:22},
+        {name:'logo205',x:57,y:25},
+        {name:'logo204',x:76,y:13},
+        {name:'logo332',x:85,y: 1},
+        {name:'logo206',x:90,y: 9},
+        {name:'logo218',x:116,y:-20},
+        {name:'logo227',x:124,y:21},
+        {name:'logo207',x:125,y:5},
+        {name:'logo214',x:134,y:0}
+    ]}];
+    
+    // chart drawing
+    var chart = new Highcharts.Chart(options);
+    
+});
+
+
+
+// chart theme
+style = {
+    chart: {
+        marginLeft: 160,
+        marginBottom: 160,
+        spacing: [30,20,20,20],
+        style: {
+            fontFamily: "Myriad Pro, sans-serif;",
+            color: "#521797"
+        },
+        backgroundColor: "none"
+    },
+	yAxis: {
+        tickInterval: 10,
+        offset: 8,
+        gridLineColor: "#521797",
+        gridLineWidth: 0.5,
+        gridLineDashStyle: "LongDash",
+        labels: {
+            format: "{value}%",
+            style: {
+                fontSize: "18px",
+                color: "#521797"
+            }
+        },
+        title: {
+            offset: 100,
+            text: '<span style="font-size:29px;font-weight:600;">Growth</span><br/><span style="font-size:18px;font-weight:400;">(last month change in employees)</span>',
+            style: {
+                color: "#521797"
+            }
+        }
+	},
+    xAxis: {
+        tickInterval: 10,
+        offset: 15,
+        lineWidth: 0,
+        tickLength: 0,
+        labels: {
+            style: {
+                fontSize: "18px",
+                color: "#521797"
+            }
+        },
+        title: {
+            offset: 70,
+            text: '<span style="font-size:29px;font-weight:600;">Size</span><br/><span style="font-size:18px;font-weight:400;">(employees)</span>',
+            style: {
+                color: "#521797"
+            }
+        }
+    },
+    plotOptions: {
+        series: {
+            lineWidth: 0,
+            dataLabels: {
+                enabled: true,
+                x:0,
+                y:26,
+                overflow: 'hidden',
+                crop: false,
+                useHTML: true,
+                formatter: function() {
+                    return "<div class='image-marker " + this.point.name + "' />";
+                }
+            }
+        }
+    }
+};
+
+// chart options
+var options = {
+        chart: {
+            renderTo: "container"
+        },
+        xAxis: {
+            minPadding: 0.03,
+            title: {
+                enabled: true
+            },
+        },
+        yAxis: {
+            maxPadding: 0,
+            title: {
+                enabled: true
+            }
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        tooltip: {
+            enabled: false
+        },
+        legend: {
+            enabled: false
+        },
+        credits: {
+            text: ""
+        },
+        title: {
+            text: ""
+        }
+};
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".toggle-filters").click(function(){
+            $(".filters").hide();
+            $(".graph").toggleClass("col-md-12");
+            $(".graph").toggleClass("col-md-9");
+            $("#container").css("width", "100%");
+        })
+    })
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>

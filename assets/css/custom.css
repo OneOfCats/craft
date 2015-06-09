@@ -1,0 +1,946 @@
+/* Add here all your css styles (customizations) */
+@font-face {
+	font-family: "Flaticon";
+	src: url("../plugins/flaticon/flaticon.eot");
+	src: url("../plugins/flaticon/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../plugins/flaticon/flaticon.woff") format("woff"),
+	url("../plugins/flaticon/flaticon.ttf") format("truetype"),
+	url("../plugins/flaticon/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 40px;
+font-style: normal;
+margin-left: 0;
+}.flaticon-black170:before {
+	content: "\e000";
+}
+.flaticon-heart27:before {
+	content: "\e001";
+}
+
+.btn-u:focus, .btn-u:hover, .btn-u:active {
+    color: #fff!important;
+}
+
+.topbar {
+    background: #521b92;
+    padding: 3px 0;
+}
+
+.topbar ul.loginbar > li {
+    padding-bottom: 8px;
+}
+
+.topbar ul.loginbar > li > a, .topbar ul.loginbar > li > a:hover {
+    color: #fff;
+}
+
+.topbar ul.loginbar li i.fa {
+    color: #fff;
+}
+
+.topbar ul.loginbar > li > a, .topbar ul.loginbar > li > a:hover {
+    text-transform: capitalize;
+}
+
+.header .navbar-brand {
+    top: -1px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.header .navbar-brand img {
+    height: 50px;
+}
+
+.header .navbar-default .navbar-nav > li > a {
+    padding: 9px 20px;
+}
+
+.topbar ul.infobar {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.topbar ul.infobar > li {
+    display: inline;
+    list-style: none outside none;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.topbar ul.infobar > li > a, .topbar ul.infobar > li > a:hover  {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.topbar ul.infobar li i.fa {
+    color: #fff;
+}
+
+.header .navbar .nav > li > .search {
+    padding: 20px 0;
+    margin-top: -2px;
+}
+
+.header .navbar .nav > li {
+    margin-top: 11px;
+}
+
+.header .navbar .nav > li > .input-group {
+    margin: 0 20px;
+    width: 224px;
+}
+
+.header .navbar .search-open {
+    top: 53px;
+}
+
+@media (max-width: 999px) {
+
+    .header .navbar .nav > li > .search {
+        margin: 5px 10px 0;
+        padding: 11px 0 12px 0;
+    }
+
+    .header .navbar .nav > li > .search:hover {
+        color: #fff !important;
+        background: #521b92;
+    }
+
+    .header .navbar .search-open {
+        top: 5px;
+    }
+
+    .header .navbar .nav > li > button {
+        margin: 8px 20px;
+    }
+}
+
+.search-block {
+    background: url("../img/bg/logos.jpg") repeat fixed 50% 0 rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    padding: 50px 0;
+}
+
+.search-block .carousel-caption {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.search-block:before {
+    background: rgba(225, 225, 225, 0.5);
+}
+
+.search-banner form .headline {
+    margin: 0 0 25px;
+}
+
+.search-banner form fieldset {
+	padding-top: 0;
+}
+
+.heading.lg h2 {
+    font-size: 35px;
+    font-weight: 300 !important;
+    line-height: normal;
+}
+
+a.servive-block {
+	display: block;
+	text-decoration: none;
+}
+
+a.servive-block .service-bg {
+    width: 400px;
+    right: -243px;
+    transform: rotate(45deg);
+    top: 27px;
+    transition: all 0.5s ease;
+}
+
+a.servive-block:hover .pulse-grow {
+  -webkit-animation-name: pulse-grow;
+  animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+a.servive-block:hover .service-bg {
+    right: 500px;
+}
+
+a.servive-block h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.servive-block-green {
+    background: none repeat scroll 0 0 #72c02c;
+}
+
+@media (max-width: 768px) {
+    a.servive-block .service-bg {
+        transition: none;
+    }
+
+    a.servive-block:hover .service-bg {
+        right: -237px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    a.servive-block h2 {
+        font-size: 16px;
+    }
+}
+
+a.servive-block i.icon-custom {
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    width: 50px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.footer {
+    background: url("../img/bg/pattern.png") repeat fixed left top;
+    color: #555;
+}
+
+.footer .headline {
+    border-bottom: 1px dotted #555;
+}
+
+.footer h2, .footer h3, .footer h4 {
+    color: #555;
+}
+
+.footer p {
+    color: #555;
+}
+
+.footer .posts .dl-horizontal a {
+    color: #555;
+}
+
+.footer .quick-contact textarea {
+	height: 95px;
+	resize: none;
+}
+
+.unstyled-form {
+	border: none;
+}
+
+.unstyled-form fieldset {
+	background: none;
+}
+
+.copyright {
+    background: #fff;
+    border-top: none;
+}
+
+.breadcrumbs {
+    background: url("../img/bg/pattern.png") repeat fixed left top rgba(0, 0, 0, 0);
+}
+
+.breadcrumbs h1 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.sky-form a {
+	color: #521b92;
+}
+
+.breadcrumb > li + li:before {
+    color: #777;
+}
+
+.sorting-block .sorting-grid .mix {
+    opacity: 1;
+    margin: 7px 5px;
+}
+
+.sorting-block .sorting-nav li.active {
+    border-bottom: none;
+}
+
+.sorting-block .sorting-nav li.active a {
+    background: #3498db;
+    color: #fff;
+}
+
+.sorting-block .sorting-nav li a:hover {
+    color: #2980b9!important;
+}
+
+.sorting-block .sorting-nav li.active a:hover {
+    color: #fff!important;
+    cursor: default;
+}
+
+.sorting-block .sorting-nav-v1 li {
+    margin: 5px;
+    width: 48%;
+}
+
+.sorting-block .sorting-nav-v1 li a {
+    display: block;
+    white-space: normal;
+}
+
+.sorting-block a:focus, .sorting-block a:hover, .sorting-block a:active {
+    color: #fff;
+}
+
+.sorting-block .sorting-grid {
+	text-align: center;
+}
+
+.profile .profile-blog {
+    height: 148px;
+    margin: 0 0 30px 0;
+}
+
+.share-list li i {
+    color: #3498db;
+}
+
+.copyright p {
+    color: #777;
+}
+
+figure h4 {
+    font-size: 11px;
+}
+
+.block-level-v2 {
+    background: none repeat scroll 0 0 #f7f7f7;
+}
+
+.jobs-table table {
+    background: #fff;
+}
+
+.jobs-table table {
+    border: 1px solid #ddd;
+}
+
+.jobs-table table td {
+    vertical-align: middle!important;
+}
+
+.jobs-table td span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.jobs-table .relates {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.jobs-table .relates strong {
+    display: block;
+    text-align: center;
+}
+
+.jobs-table .relates div a {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #3498db;
+}
+
+.jobs-table .wide {
+    width: 25%;
+}
+
+.block-level-v2 .responsive-video {
+    margin-bottom: 0;
+}
+
+.block-description .right-inner img {
+    border: none;
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.block-description .left-inner .company-logo {
+    border: 1px solid #eee;
+    float: left;
+    height: auto;
+    margin: 0 10px 10px 0;
+    padding: 3px;
+    width: 80px;
+}
+
+.sorting-block .sorting-nav-v1 li {
+    font-style: normal;
+}
+
+.breadcrumbs {
+    padding: 0 0 6px;
+}
+
+.breadcrumbs h1 {
+    margin-bottom: 0;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+}
+
+.tab-v1 .tab-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.tab-v1 .nav-tabs > li > a:hover {
+    background: #dee0df;
+    color: #521b92;
+}
+
+.fixed-form {
+    width: 360px;
+}
+
+.job-partners .title-box-v2 {
+    margin-bottom: 0;
+}
+
+.job-partners h3 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.job-partners .title-box-v2 .btn-u {
+    margin-top: 5px;
+}
+
+.table-search-v2 td, .table-search-v2 th {
+    text-align: center;
+}
+
+.table-search-v2 td a {
+    display: block;
+}
+
+.table-search-v2 td img {
+    margin-bottom: 5px;
+}
+
+#effect-2 figure .img-hover h4 {
+    line-height: 20px;
+}
+
+.tab-v1 .nav-tabs a {
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+.registration-block {
+    background: none repeat scroll 0 0 #f7f7f7;
+}
+
+.registration-block h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    font-weight: 300;
+    text-align: center;
+}
+
+.registration-block .btn-group {
+    border: 1px solid #eee;
+}
+
+.registration-block .btn-group a {
+    border: none;
+    border-right: 1px solid #eee;
+    cursor: default;
+}
+
+.registration-block .btn-group a:last-child {
+    border: none;
+}
+
+.registration-block .btn-group a:hover {
+    cursor: default;
+    background: #fff;
+}
+
+.registration-block .btn-group a.active {
+    background: none repeat scroll 0 0 #3498db;
+    color: #fff;
+    box-shadow: none;
+}
+
+
+.registration-block button .fa {
+    font-size: 15px;
+}
+
+.registration-block .back {
+    margin-right: 10px;
+}
+
+.registration-block p {
+    font-size: 14px;
+}
+
+.registration-block p a {
+    text-decoration: underline;
+    color: #555;
+}
+
+.registration-block .label {
+    font-size: 20px;
+    line-height: normal;
+}
+
+.registration-block .checkbox-other {
+    margin-top: 10px;
+}
+
+.content {
+    padding-top: 30px;
+}
+
+.twitter-scroll {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.twitter-scroll li {
+    float: left;
+    padding: 10px;
+    background: #f7f7f7;
+    margin-right: 10px;
+}
+
+.twitter-scroll li p {
+    margin-bottom: 0;
+}
+
+.twitter-scroll li a {
+    color: #521b92;
+}
+
+.grey {
+    background: #f7f7f7;
+}
+
+.companies .content {
+    padding-bottom: 10px;
+}
+
+@media (min-width: 999px) {
+    .company-filter .inline-group .checkbox {
+        display: block;
+        float: none;
+    }
+}
+
+.category {
+    text-align: center;
+    background: #fff;
+    padding: 15px 0;
+    border-top: 2px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.category a {
+    display: inline-block;
+    height: 87px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+    width: 32%;
+    text-align: center;
+}
+
+.category a:hover {
+	text-decoration: none;
+}
+
+.category a img {
+    height: 48px;
+    margin-bottom: 5px;
+    width: 48px;
+}
+
+.category a span {
+    display: block;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: middle;
+    color: #3498db;
+}
+
+/* Background changes on grid view for Ilya */
+
+.breadcrumbs {
+    background-image: none;
+    background-color: #eee;
+}
+
+.company-filter header, .company-filter fieldset, .company-filter footer {
+    background: #521b92;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.company-filter footer {
+    padding: 0;
+}
+
+.company-filter h4 {
+    color: #fff;
+    border-color: #fff;
+}
+
+.company-filter .checkbox {
+    color: #fff;
+}
+
+.companies {
+    background: url("../img/bg/pattern.png") repeat fixed left top;
+}
+
+.category {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+    background-image: none;
+    background-color: #eee;
+}
+
+body.error {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg/pattern.png") repeat fixed left top;
+}
+
+body.error .wrapper {
+    background: none;
+}
+
+.error-v2 p {
+    font-size: 30px;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.views {
+    height: 48px;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+
+.views a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.company-filter {
+    margin-bottom: 30px;
+}
+
+.compare table tr th {
+    width: 20%;
+}
+
+.compare table tr th a {
+    display: inline-block;
+    text-align: center;
+    color: #428bca;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.compare table tr th a img {
+    height: 48px;
+    margin-bottom: 5px;
+    width: 48px;
+    display: block;
+}
+
+.profile-blog .text-center strong {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.btn-u[disabled] {
+    background: #3d146c;
+}
+
+.tagcopy img {
+    height: 70px;
+}
+
+.tagcopy small {
+    vertical-align: bottom;
+}
+
+#correction .label {
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+}
+
+.parallax-counter {
+    background: none;
+    padding: 30px 0 0 0;
+    margin-top: 10px;
+}
+
+.parallax-counter .counters {
+    background: #f9f9f9;
+    color: #585f69;
+}
+
+.parallax-counter h4 {
+    color: #585f69;
+}
+
+.counters i {
+    font-size: 35px;
+}
+
+.magazine-news .by-author strong {
+    color: #521b92;
+}
+
+.magazine-news .by-author span {
+    color: #777;
+}
+
+.magazine-news a.read-more {
+    color: #521b92;
+}
+
+.magazine-news .by-author {
+    margin-bottom: 8px;
+}
+
+.magazine-news h3,
+.magazine-news h3 a {
+    color: #555;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 1px;
+    text-decoration: none;
+}
+
+.magazine-news h3 a:hover {
+    color: #521b92;
+}
+
+.magazine-news h3 {
+    margin: 15px 0 10px;
+}
+
+.block-level-v2.life{
+    background: #fff;
+}
+
+.magazine-news hr {
+    margin: 20px 0;
+}
+
+.flexslider.home {
+    padding-top: 20px;
+}
+
+.flexslider .slides img {
+    max-width: 70px;
+}
+
+.clients li {
+    background: none repeat scroll 0 0 #fafafa;
+    padding: 20px 0;
+}
+
+.clients li a:hover {
+    text-decoration: none;
+}
+
+.clients li a span {
+    color: #3498db;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.awards {
+    padding-bottom: 50px;
+}
+
+.awards .slides li {
+    height: 100px;
+}
+
+.awards .slides img {
+    width: auto;
+    height: 60px;
+    max-width: 100%;
+}
+
+.connect {
+    padding-top: 20px;
+}
+
+.connect h2 {
+    margin: 0;
+    padding: 8px 0;
+}
+
+.connect .social .btn {
+    margin-bottom: 10px;
+}
+
+.servive-block-blue.facebook {
+	background: #0e1f5b;
+}
+
+.registration {
+	background: #f9f9f9;
+}
+
+.reg-form .sky-form footer {
+	text-align: right;
+	padding-top: 25px;
+}
+
+.registration .next {
+	padding-top: 50px;
+}
+
+.registration .servive-block {
+	cursor: pointer;
+}
+
+.registration .servive-block-dark:hover, .registration .servive-block-dark.active {
+	background: #3498db;
+}
+
+.registration .service-or.active {
+	border: 3px solid;
+}
+
+.registration .sky-form {
+	border: none;
+}
+
+.input-lg {
+    height: 48px;
+}
+
+.job-roles .col-sm-4 {
+	margin-bottom: 20px;
+}
+
+.add-options {
+	margin-top: 10px;
+}
+
+.add-options .labels {
+	margin-top: 10px;
+}
+
+.registration .sky-form .labels .label {
+    border-radius: 0;
+    color: #fff;
+    display: inline;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px 7px;
+    text-align: left;
+    white-space: normal;
+}
+
+.registration .next .skip {
+	margin-right: 5px;
+}
+
+.blog-twitter .blog-twitter-inner a {
+    color: #3498db;
+}
+
+.blog-twitter .blog-twitter-inner:hover::after {
+    border-top-color: #3498db;
+}
+
+.sky-form .select i {
+    height: 31px;
+    right: 1px;
+    top: 1px;
+    width: 31px;
+}
+
+.sky-form .select i::after, .sky-form .select i::before {
+    right: 11px;
+}
+
+.sky-form .select i::after, .sky-form .select i::before {
+    top: 17px;
+}
+
+.sky-form .select i::before {
+    border-bottom: 4px solid #404040;
+    top: 11px;
+}
+
+
+.owl-clients-v2 .item img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.owl-pagination {
+    padding-top: 20px;
+}
+
+.social .grid-boxes-caption h3 {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.service-block-v6 .service-desc h2 {
+    text-transform: capitalize;
+}
+
+.service-block-v6 .margin-bottom-10 {
+    height: 115px;
+}

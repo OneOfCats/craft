@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Table View</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+
+    <!-- CSS Page Style -->    
+    <link rel="stylesheet" href="assets/css/pages/page_404_error.css">
+
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body>
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right"> 
+                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="#">Register</a></li> 
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/logo-default.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search companies">
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Go</button>
+                                </span>
+                            </div>   
+                        </li>
+                        <li><button class="btn-u" type="">Browse Companies</button></li>
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->    
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">FinTech</h1>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Grid ===-->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-3">
+                        <form class="sky-form" id="sky-form4" action="" novalidate="novalidate">
+                            <header>Search companies</header>
+                            
+                            <fieldset>                  
+                                <section>
+                                    <label class="select">
+                                        <select name="industry" id="filter-industry">
+                                            <option disabled="" selected="" value="0">Industry</option>
+                                            <option value="Music">Music</option>
+                                            <option value="Video">Video</option>
+                                            <option value="On-Demand Mobile Services">On-Demand Mobile Services</option>
+                                            <option value="News">News</option>
+                                            <option value="Enterprise Software">Enterprise Software</option>
+                                            <option value="eCommerce">eCommerce</option>
+                                            <option value="FinTech">FinTech</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </section>
+                                
+                                <section>
+                                    <label class="select" id="filter-category">
+                                        <select name="category">
+                                            <option disabled="" selected="" value="0">Category</option>
+                                            <option value="Streaming / Download">Streaming / Download</option>
+                                            <option value="Community">Community</option>
+                                            <option value="Database / Discovery">Database / Discovery</option>
+                                            <option value="B2B / Industry / Artist">B2B / Industry / Artist</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </section>
+
+                                <section>
+                                    <div class="headline">
+                                        <h4>Location</h4>
+                                    </div>
+                                    <div class="inline-group">                    
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline" checked><i></i>All</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>New York</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>SF Bay Area</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>London</label>
+                                    </div>
+                                </section>
+                                
+                                <section>
+                                    <div class="headline">
+                                        <h4>Size</h4>
+                                    </div>
+                                    <div class="inline-group">                    
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline" checked><i></i>All</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i><20</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>20-99</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>100-499</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>500+</label>
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <footer>
+                                <button class="btn-u" type="submit">Search</button>
+                            </footer>
+                        </form>
+            </div>
+            <div class="col-md-9 job-partners">
+                <div class="title-box-v2">
+                    <h2>Welcome to <span class="color-green">Craft</span>, the information platform for professionals</h2>
+                    <p>Below is a curated selection of growing <span class="label label-blue">FinTech</span> companies in <span class="label label-green">All</span> categories<br>
+                    Click on any logo to see a detailed company profile, including current open positions<br>
+                    or<br>
+                    <a href="grid.html" class="btn-u">back to grid view</a></p>
+                </div>
+
+                <h3>Finance Providers</h3>
+                    <div class="table-search-v2 margin-bottom-20">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th class="hidden-sm">What it Does</th>
+                                        <th>HQ</th>
+                                        <th>Employees</th>
+                                        <th>Twitter followers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://pbs.twimg.com/profile_images/378800000599822023/e02bc0a6c9bbb5c7e2d2e89ac0657f69.jpeg" alt="">
+                                            LendInvest</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://pbs.twimg.com/profile_images/1825079270/icon_al_twitter_02__1_.png" alt="">
+                                            AngelList</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            324
+                                        </td>
+                                        <td>
+                                            13,545
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://pbs.twimg.com/profile_images/466723776856473600/Crbv42wF.png" alt="">
+                                            Watsi</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://pbs.twimg.com/profile_images/424213324176183296/fTwUz1iB.png" alt="">
+                                            Hedgeye Risk Management</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                <h3>Financial Management</h3>
+                <div class="table-search-v2 margin-bottom-20">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th class="hidden-sm">What it Does</th>
+                                        <th>HQ</th>
+                                        <th>Employees</th>
+                                        <th>Twitter followers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000599822023/e02bc0a6c9bbb5c7e2d2e89ac0657f69.jpeg" alt="">
+                                            <a href="#">LendInvest</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/1825079270/icon_al_twitter_02__1_.png" alt="">
+                                            <a href="#">AngelList</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            324
+                                        </td>
+                                        <td>
+                                            13,545
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/466723776856473600/Crbv42wF.png" alt="">
+                                            <a href="#">Watsi</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000665797817/63fba270819841ce16c5e8f20a340df8.png" alt="">
+                                            <a href="#">Deem</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                <h3>Financial News</h3>
+                <div class="table-search-v2 margin-bottom-20">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th class="hidden-sm">What it Does</th>
+                                        <th>HQ</th>
+                                        <th>Employees</th>
+                                        <th>Twitter followers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000599822023/e02bc0a6c9bbb5c7e2d2e89ac0657f69.jpeg" alt="">
+                                            <a href="#">LendInvest</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/1825079270/icon_al_twitter_02__1_.png" alt="">
+                                            <a href="#">AngelList</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            324
+                                        </td>
+                                        <td>
+                                            13,545
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/466723776856473600/Crbv42wF.png" alt="">
+                                            <a href="#">Watsi</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000665797817/63fba270819841ce16c5e8f20a340df8.png" alt="">
+                                            <a href="#">Deem</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                <h3>Crowdfunding</h3>
+                <div class="table-search-v2 margin-bottom-20">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th class="hidden-sm">What it Does</th>
+                                        <th>HQ</th>
+                                        <th>Employees</th>
+                                        <th>Twitter followers</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000599822023/e02bc0a6c9bbb5c7e2d2e89ac0657f69.jpeg" alt="">
+                                            <a href="#">LendInvest</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/1825079270/icon_al_twitter_02__1_.png" alt="">
+                                            <a href="#">AngelList</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            324
+                                        </td>
+                                        <td>
+                                            13,545
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/466723776856473600/Crbv42wF.png" alt="">
+                                            <a href="#">Watsi</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://pbs.twimg.com/profile_images/378800000665797817/63fba270819841ce16c5e8f20a340df8.png" alt="">
+                                            <a href="#">Deem</a>
+                                        </td>
+                                        <td class="td-width">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id commodo lacus. Fusce non malesuada ante. Donec vel arcu.</p>
+                                        </td>
+                                        <td>
+                                            Chicago
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            5,393
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div><!--/container-->  
+    <!--=== End Content Part ===-->
+
+<!--=== Footer ===-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- About -->
+                    <div class="headline"><h4>About</h4></div>  
+                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                    <!-- End About -->
+
+                    <!-- Monthly Newsletter -->
+                    <div class="headline"><h4>Newsletter</h4></div> 
+                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                    <form class="footer-subsribe">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email Address">                            
+                            <span class="input-group-btn">
+                                <button class="btn-u" type="button">Subscribe</button>
+                            </span>
+                        </div>                  
+                    </form>                         
+                    <!-- End Monthly Newsletter -->
+                </div><!--/col-md-4-->  
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- Recent Blogs -->
+                    <div class="posts">
+                        <div class="headline"><h4>Recent Tweets</h4></div>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                            <dd>
+                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                            <dd>
+                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                            <dd>
+                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                            <dd>
+                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- End Recent Blogs -->                    
+                </div><!--/col-md-4-->
+
+                <div class="col-md-4">
+                    <!-- Contact Us -->
+                    <div class="headline"><h4>Send Feedback</h4></div> 
+                    <form class="quick-contact md-margin-bottom-40">
+                        <label>Name</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Email <span class="color-red">*</span></label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <input type="text" class="form-control">
+                            </div>                
+                        </div>
+                        
+                        <label>Message</label>
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12 col-md-offset-0">
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>                
+                        </div>
+                        
+                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                    </form>
+                    <!-- End Contact Us -->
+                </div><!--/col-md-4-->
+            </div>
+        </div> 
+    </div>     
+    <!--=== End Footer ===-->
+
+    <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">                     
+                        <p>
+                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="col-md-6">  
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
+                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
+                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
+                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div> 
+    </div><!--/copyright-->
+</div><!--/End Wrapepr-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
+<script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>
