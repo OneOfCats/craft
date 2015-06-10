@@ -944,3 +944,7 @@ body.error .wrapper {
 .service-block-v6 .margin-bottom-10 {
     height: 115px;
 }
+
+.sky-form {
+    border: none;
+}
