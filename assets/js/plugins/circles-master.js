@@ -7,48 +7,48 @@ var CirclesMaster = function () {
         	//Circles 1
 		    Circles.create({
 		        id:         'circle-1',
-		        percentage: 27,
-		        radius:     30,
-		        width:      5,
-		        number:     27,
+		        percentage: 87,
+		        radius:     80,
+		        width:      8,
+		        number:     87,
 		        text:       '%',
-		        colors:     ['#eee', '#3498db'],
+		        colors:     ['#eee', '#72c02c'],
 		        duration:   2000
 		    })
 
         	//Circles 2
 		    Circles.create({
 		        id:         'circle-2',
-		        percentage: 64,
-		        radius:     30,
-		        width:      5,
-		        number:     64,
+		        percentage: 74,
+		        radius:     80,
+		        width:      8,
+		        number:     74,
 		        text:       '%',
-		        colors:     ['#eee', '#3498db'],
+		        colors:     ['#eee', '#72c02c'],
 		        duration:   2000
 		    })
 
         	//Circles 3
 		    Circles.create({
 		        id:         'circle-3',
-		        percentage: 45,
-		        radius:     30,
-		        width:      5,
-		        number:     45,
+		        percentage: 65,
+		        radius:     80,
+		        width:      8,
+		        number:     65,
 		        text:       '%',
-		        colors:     ['#eee', '#3498db'],
+		        colors:     ['#eee', '#72c02c'],
 		        duration:   2000
 		    })
 
 		    //Circles 4
 		    Circles.create({
 		        id:         'circle-4',
-		        percentage: 79,
-		        radius:     30,
-		        width:      5,
-		        number:     79,
+		        percentage: 69,
+		        radius:     35,
+		        width:      2,
+		        number:     69,
 		        text:       '%',
-		        colors:     ['#eee', '#3498db'],
+		        colors:     ['#eee', '#72c02c'],
 		        duration:   2000
 		    })
 

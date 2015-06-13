@@ -50,10 +50,10 @@ var FormSliders = function () {
 	        
 	        // Rounded Range slider
 	        $('#slider2-rounded').slider({
-		      min: 0,
-		      max: 500,
+		      min: 1,
+		      max: 200,
 		      range: true,
-		      values: [75, 300],
+		      values: [1, 200],
 		      slide: function(event, ui)
 		      {
 		        $('#slider2-value1-rounded').text(ui.values[0]);

@@ -48,8 +48,9 @@ var OwlCarousel = function () {
 
 	        //Owl Slider v4
 			jQuery(".owl-slider-v4").owlCarousel({
-                items:3,
-                itemsDesktop : [1000,3],
+                items:5,
+                autoPlay : 5000,
+                itemsDesktop : [1000,5],
                 itemsTablet : [600,2],
                 itemsMobile : [479,1]
             });
@@ -99,9 +100,9 @@ var OwlCarousel = function () {
 
             //Owl Clients v1
             jQuery(".owl-clients-v1").owlCarousel({
-                items : 7,
+                items : 4,
                 autoPlay : 5000,
-                itemsDesktop : [1000,5],
+                itemsDesktop : [1000,4],
                 itemsDesktopSmall : [900,4],
                 itemsTablet: [600,3],
                 itemsMobile : [300,2]
@@ -111,7 +112,8 @@ var OwlCarousel = function () {
             //Owl Clients v2
             jQuery(".owl-clients-v2").owlCarousel({
                 items : 5,
-                autoPlay : 10000,
+                autoPlay : 3000,
+                pagination : false,
                 itemsDesktop : [1000,5],
                 itemsDesktopSmall : [900,4],
                 itemsTablet: [600,3],

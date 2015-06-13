@@ -15,20 +15,25 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-default.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+    <link href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css" rel="stylesheet">
+    <link href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css" rel="stylesheet">
 
     <!-- CSS Page Style -->    
-    <link rel="stylesheet" href="assets/css/pages/graph.css">
+    <link rel="stylesheet" href="assets/css/pages/profile.css">
 
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-colors/purple.css" id="style_color">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -38,21 +43,7 @@
 
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <!-- Topbar Navigation -->
-                <ul class="loginbar pull-right"> 
-                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
-                    <li class="topbar-devider"></li>
-                    <li><a href="#">Register</a></li> 
-                </ul>
-                <!-- End Topbar Navigation -->
-            </div>
-        </div>
-        <!-- End Topbar -->
-    
+    <div class="header">   
         <!-- Navbar -->
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -66,6 +57,35 @@
                         <img id="logo-header" src="assets/img/logo-default.svg" alt="Logo">
                     </a>
                 </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search companies">
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Go</button>
+                                </span>
+                            </div>   
+                        </li>
+                        <li>
+                            <ul class="social-icons pull-right hidden-xs">
+                                <li>
+                                <a class="rounded-x social_googleplus" title="Google Plus" href="https://plus.google.com/111011203265073947311/posts"></a>
+                                </li>
+                                <li>
+                                <a class="rounded-x social_twitter" title="Twitter" href="https://twitter.com/craftdotco"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://blog.craft.co/">Blog</a>
+                        </li>
+                        <li><a class="btn-u explore-btn" href="#">Learn more</a></li>
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
             </div>    
         </div>            
         <!-- End Navbar -->
@@ -86,7 +106,6 @@
 	        <div class="row">
 	            <div class="col-md-3 filters">
 	                        <form class="sky-form company-filter" id="sky-form4" action="" novalidate="novalidate">
-                                <a href="#" data-remote="true" class="btn-u btn-sm pull-left toggle-filters"><i class="fa fa-outdent"></i></a>
 	                            <header>Search companies</header>
 	                            
 	                            <fieldset><section><label id="ul-industry" class="select"><select name="company[industry_id]" id="company_industry_id"><option value=""></option>
@@ -126,18 +145,18 @@
                                                             <th>
                                                                 <a href="#" rel="">
                                                                 <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/456438835132383232/aMvssWiT_400x400.jpeg">
-                                                                <span>Borro</span>
+                                                                <span>Warby Parker</span>
                                                                 </a>
                                                             </th>
                                                             <th>
                                                                 <a href="#" rel="">
-                                                                <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/527546559789944833/jG0Sorqd.png">
-                                                                <span>Lyft</span>
+                                                                <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/571363022652706816/gOAVGplp_400x400.png">
+                                                                <span>Signet Jewelers Limited</span>
                                                                 </a>
                                                             </th>
                                                             <th>
                                                                 <a href="#" rel="">
-                                                                <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/2149850909/hailo_twitter.png">
+                                                                <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/596231175913533440/4MGWJ_s3_400x400.jpg">
                                                                 <span>Hailo</span>
                                                                 </a>
                                                             </th>
@@ -145,6 +164,12 @@
                                                                 <a href="#" rel="">
                                                                 <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/378800000762572812/91ea09a6535666e18ca3c56f731f67ef.jpeg">
                                                                 <span>Uber</span>
+                                                                </a>
+                                                            </th>
+                                                            <th>
+                                                                <a href="#" rel="">
+                                                                <img class="rounded-x" alt="Amvsswit normal" src="https://pbs.twimg.com/profile_images/596231175913533440/4MGWJ_s3_400x400.jpg">
+                                                                <span>Hailo</span>
                                                                 </a>
                                                             </th>
                                                         </tr>
@@ -155,56 +180,56 @@
                                                             <td>San Francisco</td>
                                                             <td>San Francisco</td>
                                                             <td>London</td>
-                                                            <td>New York</td>                          
+                                                            <td>New York</td>
+                                                            <td>London</td>                         
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Employees</strong></td>
                                                             <td>2,100</td>
                                                             <td>500</td>
                                                             <td>200</td>
-                                                            <td>150</td>                           
+                                                            <td>150</td>
+                                                            <td>200</td>                         
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Employee Growth</strong></td>
                                                             <td>11%</td>
                                                             <td>5%</td>
                                                             <td>3%</td>
-                                                            <td>2%</td>                         
+                                                            <td>2%</td>
+                                                            <td>3%</td>                         
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Open Positions</strong></td>
                                                             <td>424</td>
                                                             <td>25</td>
                                                             <td>19</td>
-                                                            <td>11</td>                            
+                                                            <td>11</td>
+                                                            <td>25</td>                            
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Stage</strong></td>
                                                             <td>D</td>
                                                             <td>D</td>
                                                             <td>D</td>
-                                                            <td>D</td>                            
+                                                            <td>D</td>
+                                                            <td>D</td>                           
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Funding</strong></td>
                                                             <td>$1,530m</td>
                                                             <td>$333m</td>
                                                             <td>$77m</td>
-                                                            <td>$50m</td>                            
+                                                            <td>$50m</td> 
+                                                            <td>$77m</td>                           
                                                         </tr>
                                                         <tr>
                                                             <td><strong>Time since last funding</strong></td>
                                                             <td>2 mo</td>
                                                             <td>4 mo</td>
                                                             <td>8 mo</td>
-                                                            <td>1 mo</td>                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td><strong>Male : Female Ratio</strong></td>
-                                                            <td><div class="circle" id="circle-1"></div></td>
-                                                            <td><div class="circle" id="circle-2"></div></td>
-                                                            <td><div class="circle" id="circle-3"></div></td>
-                                                            <td><div class="circle" id="circle-4"></div></td>                            
+                                                            <td>1 mo</td>
+                                                            <td>4 mo</td>                          
                                                         </tr>
                                                     </tbody>
                                         </table>
@@ -219,150 +244,137 @@
     </div>
     <!--=== End Content Part ===-->
 
-<!--=== Footer ===-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- About -->
-                    <div class="headline"><h4>About</h4></div>  
-                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
-                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
-                    <!-- End About -->
-
-                    <!-- Monthly Newsletter -->
-                    <div class="headline"><h4>Newsletter</h4></div> 
-                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
-                    <form class="footer-subsribe">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Email Address">                            
-                            <span class="input-group-btn">
-                                <button class="btn-u" type="button">Subscribe</button>
-                            </span>
-                        </div>                  
-                    </form>                         
-                    <!-- End Monthly Newsletter -->
-                </div><!--/col-md-4-->  
-                
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- Recent Blogs -->
-                    <div class="posts">
-                        <div class="headline"><h4>Recent Tweets</h4></div>
-                        <dl class="dl-horizontal">
-                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
-                            <dd>
-                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
-                            <dd>
-                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
-                            <dd>
-                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
-                            <dd>
-                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
-                            </dd>
-                        </dl>
-                    </div>
-                    <!-- End Recent Blogs -->                    
-                </div><!--/col-md-4-->
-
-                <div class="col-md-4">
-                    <!-- Contact Us -->
-                    <div class="headline"><h4>Send Feedback</h4></div> 
-                    <form class="quick-contact md-margin-bottom-40">
-                        <label>Name</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Email <span class="color-red">*</span></label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Message</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <textarea class="form-control" rows="8"></textarea>
-                            </div>                
-                        </div>
-                        
-                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
-                    </form>
-                    <!-- End Contact Us -->
-                </div><!--/col-md-4-->
-            </div>
-        </div> 
-    </div>     
-    <!--=== End Footer ===-->
-
-    <div class="copyright">
+<div id="footer-default" class="footer-default">
+        <!--=== Footer ===-->
+        <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">                     
-                        <p>
-                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-                    <!-- Social Links -->
-                    <div class="col-md-6">  
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
-                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
-                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
-                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- About -->
+                        <div class="headline"><h4>About</h4></div>  
+                        <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                        <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                        <!-- End About -->
+
+                        <!-- Monthly Newsletter -->
+                        <div class="headline"><h4>Newsletter</h4></div> 
+                        <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                        <form class="footer-subsribe">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">                            
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Subscribe</button>
+                                </span>
+                            </div>                  
+                        </form>                         
+                        <!-- End Monthly Newsletter -->
+                    </div><!--/col-md-4-->  
+                    
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- Recent Blogs -->
+                        <div class="posts">
+                            <div class="headline"><h4>Recent Tweets</h4></div>
+                            <dl class="dl-horizontal">
+                                <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                                <dd>
+                                    <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- End Recent Blogs -->                    
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <!-- Contact Us -->
+                        <div class="headline"><h4>Send Feedback</h4></div> 
+                        <form class="quick-contact md-margin-bottom-40">
+                            <label>Name</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Email <span class="color-red">*</span></label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Message</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>                
+                            </div>
+                            
+                            <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                        </form>
+                        <!-- End Contact Us -->
+                    </div><!--/col-md-4-->
                 </div>
             </div> 
-    </div><!--/copyright-->
+        </div>    
+        <!--=== End Footer ===-->
+
+        <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">                     
+                            <p>
+                                2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col-md-6">  
+                            <ul class="social-icons pull-right">
+                                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social Links -->
+                    </div>
+                </div> 
+        </div><!--/copyright-->
+    </div>
 </div><!--/End Wrapepr-->
 
 <!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-<!-- JS Implementing Plugins -->
+<!-- JS Implementing Plugins -->           
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
-<script type="text/javascript" src="assets/plugins/circles-master/circles.js"></script>
 <!-- JS Page Level -->           
 <script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/plugins/circles-master.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initParallaxBg();
-        CirclesMaster.initCirclesMaster1();
-        CirclesMaster.initCirclesMaster2();
     });
 </script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        $('.category a').popover({
-            delay: {show: 50, hide: 100}
-         });
-    });
-</script>
-
 <!--[if lt IE 9]>
     <script src="assets/plugins/respond.js"></script>
 <![endif]-->
