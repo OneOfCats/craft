@@ -7,7 +7,7 @@
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-rounded-x=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -15,17 +15,21 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-default.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
-    <link rel="stylesheet" href="assets/css/plugins/brand-buttons/brand-buttons-inversed.css">
+    <link href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css" rel="stylesheet">
+    <link href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css" rel="stylesheet">
 
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-colors/purple.css" id="style_color">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -35,21 +39,7 @@
 
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <!-- Topbar Navigation -->
-                <ul class="loginbar pull-right"> 
-                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
-                    <li class="topbar-devider"></li>
-                    <li><a href="#">Register</a></li> 
-                </ul>
-                <!-- End Topbar Navigation -->
-            </div>
-        </div>
-        <!-- End Topbar -->
-    
+    <div class="header">   
         <!-- Navbar -->
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -75,7 +65,20 @@
                                 </span>
                             </div>   
                         </li>
-                        <li><button class="btn-u" type="">Browse Companies</button></li>
+                        <li>
+                            <ul class="social-icons pull-right hidden-xs">
+                                <li>
+                                <a class="rounded-x social_googleplus" title="Google Plus" href="https://plus.google.com/111011203265073947311/posts"></a>
+                                </li>
+                                <li>
+                                <a class="rounded-x social_twitter" title="Twitter" href="https://twitter.com/craftdotco"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://blog.craft.co/">Blog</a>
+                        </li>
+                        <li><a class="btn-u explore-btn" href="#">Learn more</a></li>
                         <!-- End Search Block -->
                     </ul>
                 </div><!--/navbar-collapse-->
@@ -135,127 +138,130 @@
     </div><!--/container-->     
     <!--=== End Content Part ===-->
 
-<!--=== Footer ===-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- About -->
-                    <div class="headline"><h4>About</h4></div>  
-                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
-                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
-                    <!-- End About -->
-
-                    <!-- Monthly Newsletter -->
-                    <div class="headline"><h4>Newsletter</h4></div> 
-                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
-                    <form class="footer-subsribe">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Email Address">                            
-                            <span class="input-group-btn">
-                                <button class="btn-u" type="button">Subscribe</button>
-                            </span>
-                        </div>                  
-                    </form>                         
-                    <!-- End Monthly Newsletter -->
-                </div><!--/col-md-4-->  
-                
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- Recent Blogs -->
-                    <div class="posts">
-                        <div class="headline"><h4>Recent Tweets</h4></div>
-                        <dl class="dl-horizontal">
-                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
-                            <dd>
-                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
-                            <dd>
-                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
-                            <dd>
-                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
-                            <dd>
-                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
-                            </dd>
-                        </dl>
-                    </div>
-                    <!-- End Recent Blogs -->                    
-                </div><!--/col-md-4-->
-
-                <div class="col-md-4">
-                    <!-- Contact Us -->
-                    <div class="headline"><h4>Send Feedback</h4></div> 
-                    <form class="quick-contact md-margin-bottom-40">
-                        <label>Name</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Email <span class="color-red">*</span></label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Message</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <textarea class="form-control" rows="8"></textarea>
-                            </div>                
-                        </div>
-                        
-                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
-                    </form>
-                    <!-- End Contact Us -->
-                </div><!--/col-md-4-->
-            </div>
-        </div> 
-    </div>     
-    <!--=== End Footer ===-->
-
-    <div class="copyright">
+    <div id="footer-default" class="footer-default">
+        <!--=== Footer ===-->
+        <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">                     
-                        <p>
-                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-                    <!-- Social Links -->
-                    <div class="col-md-6">  
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
-                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
-                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
-                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- About -->
+                        <div class="headline"><h4>About</h4></div>  
+                        <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                        <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                        <!-- End About -->
+
+                        <!-- Monthly Newsletter -->
+                        <div class="headline"><h4>Newsletter</h4></div> 
+                        <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                        <form class="footer-subsribe">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">                            
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Subscribe</button>
+                                </span>
+                            </div>                  
+                        </form>                         
+                        <!-- End Monthly Newsletter -->
+                    </div><!--/col-md-4-->  
+                    
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- Recent Blogs -->
+                        <div class="posts">
+                            <div class="headline"><h4>Recent Tweets</h4></div>
+                            <dl class="dl-horizontal">
+                                <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                                <dd>
+                                    <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- End Recent Blogs -->                    
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <!-- Contact Us -->
+                        <div class="headline"><h4>Send Feedback</h4></div> 
+                        <form class="quick-contact md-margin-bottom-40">
+                            <label>Name</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Email <span class="color-red">*</span></label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Message</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>                
+                            </div>
+                            
+                            <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                        </form>
+                        <!-- End Contact Us -->
+                    </div><!--/col-md-4-->
                 </div>
             </div> 
-    </div><!--/copyright-->
+        </div>    
+        <!--=== End Footer ===-->
+
+        <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">                     
+                            <p>
+                                2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col-md-6">  
+                            <ul class="social-icons pull-right">
+                                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social Links -->
+                    </div>
+                </div> 
+        </div><!--/copyright-->
+    </div>
+
+
 </div><!--/End Wrapepr-->
 
 <!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-<!-- JS Implementing Plugins -->
+<!-- JS Implementing Plugins -->           
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
 <!-- JS Page Level -->           
@@ -263,7 +269,6 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initParallaxBg();
     });
 </script>
 <!--[if lt IE 9]>

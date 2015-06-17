@@ -15,21 +15,25 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-default.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
-    <link href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css" rel="stylesheet">
-	<link href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
 
     <!-- CSS Page Style -->    
     <link rel="stylesheet" href="assets/css/pages/profile.css">
 
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-colors/purple.css" id="style_color">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -39,21 +43,7 @@
 
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <!-- Topbar Navigation -->
-                <ul class="loginbar pull-right"> 
-                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
-                    <li class="topbar-devider"></li>
-                    <li><a href="#">Register</a></li> 
-                </ul>
-                <!-- End Topbar Navigation -->
-            </div>
-        </div>
-        <!-- End Topbar -->
-    
+    <div class="header">   
         <!-- Navbar -->
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -67,6 +57,35 @@
                         <img id="logo-header" src="assets/img/logo-default.svg" alt="Logo">
                     </a>
                 </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search companies">
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Go</button>
+                                </span>
+                            </div>   
+                        </li>
+                        <li>
+                            <ul class="social-icons pull-right hidden-xs">
+                                <li>
+                                <a class="rounded-x social_googleplus" title="Google Plus" href="https://plus.google.com/111011203265073947311/posts"></a>
+                                </li>
+                                <li>
+                                <a class="rounded-x social_twitter" title="Twitter" href="https://twitter.com/craftdotco"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://blog.craft.co/">Blog</a>
+                        </li>
+                        <li><a class="btn-u explore-btn" href="#">Learn more</a></li>
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
             </div>    
         </div>            
         <!-- End Navbar -->
@@ -89,7 +108,9 @@
 	                        <form class="sky-form company-filter" id="sky-form4" action="" novalidate="novalidate">
 	                            <header>Search companies</header>
 	                            
-	                            <fieldset><section><label id="ul-industry" class="select"><select name="company[industry_id]" id="company_industry_id"><option value=""></option>
+	                            <fieldset>
+	                            <section>
+	                            <label id="ul-industry" class="select"><select name="company[industry_id]" id="company_industry_id"><option value=""></option>
 								<option value="1">Music</option>
 								<option value="2">Video</option>
 								<option value="4">News</option>
@@ -98,7 +119,9 @@
 								<option value="9">Healthcare</option>
 								<option value="3" selected="selected">On-Demand Mobile Services</option>
 								<option value="10">Fashion</option>
-								<option value="11">EdTech</option></select><i></i></label></section><section><label id="ul-category" class="select"><select name="company[category_id]" id="company_category_id"><option value="">All</option>
+								<option value="11">EdTech</option></select><i></i></label></section>
+								
+								<section><label id="ul-category" class="select"><select name="company[category_id]" id="company_category_id"><option value="">All</option>
 								<option value="12">Transportation</option>
 								<option value="13">Travel / Hospitality</option>
 								<option value="14">Delivery &amp; Logistics</option>
@@ -106,7 +129,26 @@
 								<option value="16">Dining and Drinks</option>
 								<option value="17">Home Services</option>
 								<option value="18">Health &amp; Beauty</option>
-								<option value="19">Entertaiment</option></select><i></i></label></section><section><div class="headline"><h4>Location</h4></div><div id="ul-location" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[location[All]]" id="location_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[New York]]" id="" checked="checked" class="checked"><i></i>New York</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[SF Bay Area]]" id="" checked="checked" class="checked"><i></i>SF Bay Area</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[London]]" id="" checked="checked" class="checked"><i></i>London</label></div></div></section><section><div class="headline"><h4>Size</h4></div><div id="ul-size" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[size[All]]" id="company_size_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[&lt;20]]" id="company_size__20" checked="checked" class="checked"><i></i>&lt;20</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[20-99]]" id="company_size_20-99" checked="checked" class="checked"><i></i>20-99</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[100-499]]" id="company_size_100-499" checked="checked" class="checked"><i></i>100-499</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[500+]]" id="company_size_500_" checked="checked" class="checked"><i></i>500+</label></div></div></section></fieldset>
+								<option value="19">Entertaiment</option></select><i></i></label></section>
+								
+								<section><div class="headline"><h4>Location</h4></div><div id="ul-location" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[location[All]]" id="location_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[New York]]" id="" checked="checked" class="checked"><i></i>New York</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[SF Bay Area]]" id="" checked="checked" class="checked"><i></i>SF Bay Area</label><label class="checkbox"><input type="checkbox" value="1" name="company[location[London]]" id="" checked="checked" class="checked"><i></i>London</label></div></div></section>
+
+								<section><div class="headline"><h4>Size</h4></div><div id="ul-size" class="inline-group"><div class="checkbox-group"><label class="checkbox"><input type="checkbox" value="1" name="company[size[All]]" id="company_size_All" checked="checked" class="checked"><i></i>All</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[&lt;20]]" id="company_size__20" checked="checked" class="checked"><i></i>&lt;20</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[20-99]]" id="company_size_20-99" checked="checked" class="checked"><i></i>20-99</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[100-499]]" id="company_size_100-499" checked="checked" class="checked"><i></i>100-499</label><label class="checkbox"><input type="checkbox" value="1" name="company[size[500+]]" id="company_size_500_" checked="checked" class="checked"><i></i>500+</label></div></div></section>
+
+								<section>
+								<div class="headline">
+									<h4>Funding</h4>
+								</div>
+								<label class="label rounded-x funding">
+									<span id="slider2-value1-rounded">1</span>m
+									-
+									<span id="slider2-value2-rounded">200</span>m
+								</label>
+								<div id="slider2-rounded"></div>
+								</section>
+
+								</fieldset>
+
 	                            <footer>
 	                                <button class="btn-u btn-u-lg btn-block" type="submit">Search</button>
 	                            </footer>
@@ -114,176 +156,181 @@
 	            </div>
 	            <div class="col-md-9">
 		            <div id="results">
-		            	<p class="clearfix"><a href="#" data-remote="true" class="btn-u pull-right">Table view</a></p>
+		            	<p class="clearfix views">
+		            	<a href="#" data-remote="true" class="btn-u pull-right">XY View</a>
+		            	<a href="#" data-remote="true" class="btn-u pull-right">Side by Side</a>
+		            	<a href="#" data-remote="true" class="btn-u pull-right">Grid View</a>
+		            	</p>
 		            	<div class="grid">
 			            	<div class="row">
 				                <div class="col-md-6">
 					                <div class="category">
 					                	<h3>Finance Providers</h3>
 										<a target="blank" rel="popover" data-toggle="modal" data-target="#crunch-profile" href="/companies/582" data-trigger="hover" data-placement="auto" data-original-title="borro" data-content="UK-US online pawnbroker that offers short-term loans secured against collateral and personal assets">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/930/aMvssWiT_normal.jpeg" alt="Amvsswit normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Amvsswit normal" data-loaded="true">
 										<span>borro</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/590" data-trigger="hover" data-placement="auto" data-original-title="CommonBond" data-content="Powering a smarter student loan through savings, simplicity, and social good">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/951/4853c5d584312384b443cd649dfd689d_normal.jpeg" alt="4853c5d584312384b443cd649dfd689d normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="4853c5d584312384b443cd649dfd689d normal" data-loaded="true">
 										<span>CommonBond</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/586" data-trigger="hover" data-placement="auto" data-original-title="Emerge Financial Wellness" data-content="Reducing financial stress, improving workplace productivity, and increasing personal savings">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/937/4f344da9a74b1c8d136ff38bc1f96ab4_normal.png" alt="4f344da9a74b1c8d136ff38bc1f96ab4 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="4f344da9a74b1c8d136ff38bc1f96ab4 normal" data-loaded="true">
 										<span>Emerge Financial Wellness</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/570" data-trigger="hover" data-placement="auto" data-original-title="Funding Circle" data-content="An online marketplace in the UK and US where people and organisations directly lend money to small businesses">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/900/FC-LOGO-ICON-73X73_03PNG_normal.png" alt="Fc logo icon 73x73 03png normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Fc logo icon 73x73 03png normal" data-loaded="true">
 										<span>Funding Circle</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/698" data-trigger="hover" data-placement="auto" data-original-title="AngelList" data-content="Badass platform for startups">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1158/icon_al_twitter_02__1__normal.png" alt="Icon al twitter 02 1 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Icon al twitter 02 1 normal" data-loaded="true">
 										<span>AngelList</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/569" data-trigger="hover" data-placement="auto" data-original-title="Mogo Finance Technology" data-content="The World's first no fee designer Prepaid Visa Card">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/895/LCGtB66L_normal.jpeg" alt="Lcgtb66l normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Lcgtb66l normal" data-loaded="true">
 										<span>Mogo Finance Technology</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/577" data-trigger="hover" data-placement="auto" data-original-title="Funding Options" data-content="Experts at helping businesses get the finance they need">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/918/LOGO_ONLY_SQUARE_normal.png" alt="Logo only square normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Logo only square normal" data-loaded="true">
 										<span>Funding Options</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/575" data-trigger="hover" data-placement="auto" data-original-title="CoverHound" data-content="Bringing Innovation, Savings & Simplicity To The Way Anyone Can Compare Insurance Quotes">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/912/Xh8lssZl_normal.png" alt="Xh8lsszl normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Xh8lsszl normal" data-loaded="true">
 										<span>CoverHound</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/566" data-trigger="hover" data-placement="auto" data-original-title="Wonga" data-content="Online payday lender that offers short-term personal cash loans to UK consumers">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/894/89474dbfcd4f8ee92a9e229749df5742_normal.png" alt="89474dbfcd4f8ee92a9e229749df5742 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="89474dbfcd4f8ee92a9e229749df5742 normal" data-loaded="true">
 										<span>Wonga</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/580" data-trigger="hover" data-placement="auto" data-original-title="Credit Karma" data-content="Home of the truly free credit score">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/926/ndLjDtpO_normal.png" alt="Ndljdtpo normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Ndljdtpo normal" data-loaded="true">
 										<span>Credit Karma</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/986" data-trigger="hover" data-placement="auto" data-original-title="Seedrs" data-content="Europe's leading equity crowdfunding platform">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1708/__cOACtL_normal.jpeg" alt=" coactl normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt=" coactl normal" data-loaded="true">
 										<span>Seedrs</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/567" data-trigger="hover" data-placement="auto" data-original-title="Think Finance" data-content="The leading provider of analytics and technology services for lenders looking to meet the needs of underserved Americans">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/891/profile_pic_11_normal.jpg" alt="Profile pic 11 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Profile pic 11 normal" data-loaded="true">
 										<span>Think Finance</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/579" data-trigger="hover" data-placement="auto" data-original-title="Finanzchef24" data-content="Online marketplace for banking and insurance products in Germany">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/921/mbknz8wcmtte33vz9g7f_normal.png" alt="Mbknz8wcmtte33vz9g7f normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Mbknz8wcmtte33vz9g7f normal" data-loaded="true">
 										<span>Finanzchef24</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/592" data-trigger="hover" data-placement="auto" data-original-title="Crowdcube" data-content="Equity crowdfunding platform authorised and regulated by the FCA">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/992/CrowdCube_logo.png" alt="Crowdcube logo" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Crowdcube logo" data-loaded="true">
 										<span>Crowdcube</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/639" data-trigger="hover" data-placement="auto" data-original-title="Kabbage" data-content="The world's fastest and easiest way to get cash">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1100/O7YUSR-R_normal.jpeg" alt="O7yusr r normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="O7yusr r normal" data-loaded="true">
 										<span>Kabbage</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/581" data-trigger="hover" data-placement="auto" data-original-title="Vittana" data-content="Making it possible for young people around the world to fund their education through student loans directly from lenders like you">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/927/Leaves-large_size_normal.png" alt="Leaves large size normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Leaves large size normal" data-loaded="true">
 										<span>Vittana</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/588" data-trigger="hover" data-placement="auto" data-original-title="Tuition.io" data-content="Manage your student loans for free See all of your loans in one place, get organized, and optimize your repayment plan">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/944/tjaqii3yx6hg9peozqqi_normal.jpeg" alt="Tjaqii3yx6hg9peozqqi normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Tjaqii3yx6hg9peozqqi normal" data-loaded="true">
 										<span>Tuition.io</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/583" data-trigger="hover" data-placement="auto" data-original-title="Zopa" data-content="UK's largest peer-to-peer lending service ">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/932/3e63df98fc40487d45901a9c349f6c11_normal.png" alt="3e63df98fc40487d45901a9c349f6c11 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="3e63df98fc40487d45901a9c349f6c11 normal" data-loaded="true">
 										<span>Zopa</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/787" data-trigger="hover" data-placement="auto" data-original-title="LendUp" data-content="You deserve a better loan. Your trusted innovator in responsible lending">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1330/2b7d3a695a90c78987727cdbca98e498_normal.jpeg" alt="2b7d3a695a90c78987727cdbca98e498 normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="2b7d3a695a90c78987727cdbca98e498 normal" data-loaded="true">
 										<span>LendUp</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/576" data-trigger="hover" data-placement="auto" data-original-title="Pave" data-content="Funding and support for people who will shape the future">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/916/ea33316789cf8f19458a7900b97d157c_normal.png" alt="Ea33316789cf8f19458a7900b97d157c normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="Ea33316789cf8f19458a7900b97d157c normal" data-loaded="true">
 										<span>Pave</span>
 										</a>
 										<a target="blank" rel="popover" href="/companies/572" data-trigger="hover" data-placement="auto" data-original-title="Simple" data-content="The way banking should be">
-										<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/906/75k-K_wV_normal.png" alt="75k k wv normal" data-loaded="true">
+										<img class="rounded-x" src="assets/img/default.png" alt="75k k wv normal" data-loaded="true">
 										<span>Simple</span>
 										</a>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="category">
-									<h4>Financial Management</h4>
-									<a target="blank" rel="popover" href="/companies/650" data-trigger="hover" data-placement="auto" data-original-title="Itemize" data-content="Powerful tracking and expense management for individuals and businesses">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1134/logo_itemize.png" alt="Logo itemize" data-loaded="true">
-									<span>Itemize</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/657" data-trigger="hover" data-placement="auto" data-original-title="JustInvesting" data-content="The online platform for the next-generation of Venture Investing">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1132/d922ff1d570bee6957ebabb431f70d32_normal.png" alt="D922ff1d570bee6957ebabb431f70d32 normal" data-loaded="true">
-									<span>JustInvesting</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/636" data-trigger="hover" data-placement="auto" data-original-title="SmartAsset" data-content="Helping People Make Smarter Financial Decisions">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1089/QCTXWZUy_normal.png" alt="Qctxwzuy normal" data-loaded="true">
-									<span>SmartAsset</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/646" data-trigger="hover" data-placement="auto" data-original-title="Money Dashboard" data-content="The free, easy way to take control of your finances. See exactly where your money goes with all your accounts in one secure place">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1111/rTP_TgQG_normal.jpeg" alt="Rtp tgqg normal" data-loaded="true">
-									<span>Money Dashboard</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/647" data-trigger="hover" data-placement="auto" data-original-title="Wealthfront" data-content="Wealthfront is the largest & fastest-growing automated investment service. We provide sophisticated investment management at prices affordable for everyone">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1119/XDwwkjbT_normal.png" alt="Xdwwkjbt normal" data-loaded="true">
-									<span>Wealthfront</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/634" data-trigger="hover" data-placement="auto" data-original-title="LearnVest" data-content="Our mission is to help people feel amazing about their money. Start making progress today">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1085/DVXGZ2E2_normal.jpeg" alt="Dvxgz2e2 normal" data-loaded="true">
-									<span>LearnVest</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/589" data-trigger="hover" data-placement="auto" data-original-title="Nutmeg" data-content="An intelligent online investment management service">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/941/cf5c069be9debbb96d01903b68cfaa15_normal.png" alt="Cf5c069be9debbb96d01903b68cfaa15 normal" data-loaded="true">
-									<span>Nutmeg</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/643" data-trigger="hover" data-placement="auto" data-original-title="Betterment" data-content="Managing your investments so you don't have to">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1133/logo_betterment.png" alt="Logo betterment" data-loaded="true">
-									<span>Betterment</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/651" data-trigger="hover" data-placement="auto" data-original-title="Propeller Industries" data-content="Early stage finance and accounting">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1121/851f8b82205039f42ce363522bab1ead_normal.jpeg" alt="851f8b82205039f42ce363522bab1ead normal" data-loaded="true">
-									<span>Propeller Industries</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/656" data-trigger="hover" data-placement="auto" data-original-title="NerdWallet" data-content="The Nerds who help you save money and make smart financial decisions">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1131/uqqpZgTn_normal.png" alt="Uqqpzgtn normal" data-loaded="true">
-									<span>NerdWallet</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/652" data-trigger="hover" data-placement="auto" data-original-title="Wallaby Financial" data-content="Swipe Smarter Maximize cash back, miles, points and shopping discounts on your rewards credit cards">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1137/logo_wallaby_financial.png" alt="Logo wallaby financial" data-loaded="true">
-									<span>Wallaby Financial</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/635" data-trigger="hover" data-placement="auto" data-original-title="Level" data-content="Achieve Balance">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1079/rBfwYfkY_normal.png" alt="Rbfwyfky normal" data-loaded="true">
-									<span>Level</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/641" data-trigger="hover" data-placement="auto" data-original-title="SecondMarket" data-content="Helps private companies and funds streamline complex transaction workflows and better communicate with stakeholders">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1136/logo_secondmarket.png" alt="Logo secondmarket" data-loaded="true">
-									<span>SecondMarket</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/982" data-trigger="hover" data-placement="auto" data-original-title="OpenGamma" data-content="Real-Time Risk Analytics and Market Risk Management">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1697/opengamma-device_normal.png" alt="Opengamma device normal" data-loaded="true">
-									<span>OpenGamma</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/645" data-trigger="hover" data-placement="auto" data-original-title="Holvi" data-content="For makers and doers Forget your bank">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1109/KScu5o3Z_normal.png" alt="Kscu5o3z normal" data-loaded="true">
-									<span>Holvi</span>
-									</a>
+										<h3>Financial Management</h3>
+										<a target="blank" rel="popover" href="/companies/650" data-trigger="hover" data-placement="auto" data-original-title="Itemize" data-content="Powerful tracking and expense management for individuals and businesses">
+										<img class="rounded-x" src="assets/img/default.png" alt="Logo itemize" data-loaded="true">
+										<span>Itemize</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/657" data-trigger="hover" data-placement="auto" data-original-title="JustInvesting" data-content="The online platform for the next-generation of Venture Investing">
+										<img class="rounded-x" src="assets/img/default.png" alt="D922ff1d570bee6957ebabb431f70d32 normal" data-loaded="true">
+										<span>JustInvesting</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/636" data-trigger="hover" data-placement="auto" data-original-title="SmartAsset" data-content="Helping People Make Smarter Financial Decisions">
+										<img class="rounded-x" src="assets/img/default.png" alt="Qctxwzuy normal" data-loaded="true">
+										<span>SmartAsset</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/646" data-trigger="hover" data-placement="auto" data-original-title="Money Dashboard" data-content="The free, easy way to take control of your finances. See exactly where your money goes with all your accounts in one secure place">
+										<img class="rounded-x" src="assets/img/default.png" alt="Rtp tgqg normal" data-loaded="true">
+										<span>Money Dashboard</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/647" data-trigger="hover" data-placement="auto" data-original-title="Wealthfront" data-content="Wealthfront is the largest & fastest-growing automated investment service. We provide sophisticated investment management at prices affordable for everyone">
+										<img class="rounded-x" src="assets/img/default.png" alt="Xdwwkjbt normal" data-loaded="true">
+										<span>Wealthfront</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/634" data-trigger="hover" data-placement="auto" data-original-title="LearnVest" data-content="Our mission is to help people feel amazing about their money. Start making progress today">
+										<img class="rounded-x" src="assets/img/default.png" alt="Dvxgz2e2 normal" data-loaded="true">
+										<span>LearnVest</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/589" data-trigger="hover" data-placement="auto" data-original-title="Nutmeg" data-content="An intelligent online investment management service">
+										<img class="rounded-x" src="assets/img/default.png" alt="Cf5c069be9debbb96d01903b68cfaa15 normal" data-loaded="true">
+										<span>Nutmeg</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/643" data-trigger="hover" data-placement="auto" data-original-title="Betterment" data-content="Managing your investments so you don't have to">
+										<img class="rounded-x" src="assets/img/default.png" alt="Logo betterment" data-loaded="true">
+										<span>Betterment</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/651" data-trigger="hover" data-placement="auto" data-original-title="Propeller Industries" data-content="Early stage finance and accounting">
+										<img class="rounded-x" src="assets/img/default.png" alt="851f8b82205039f42ce363522bab1ead normal" data-loaded="true">
+										<span>Propeller Industries</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/656" data-trigger="hover" data-placement="auto" data-original-title="NerdWallet" data-content="The Nerds who help you save money and make smart financial decisions">
+										<img class="rounded-x" src="assets/img/default.png" alt="Uqqpzgtn normal" data-loaded="true">
+										<span>NerdWallet</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/652" data-trigger="hover" data-placement="auto" data-original-title="Wallaby Financial" data-content="Swipe Smarter Maximize cash back, miles, points and shopping discounts on your rewards credit cards">
+										<img class="rounded-x" src="assets/img/default.png" alt="Logo wallaby financial" data-loaded="true">
+										<span>Wallaby Financial</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/635" data-trigger="hover" data-placement="auto" data-original-title="Level" data-content="Achieve Balance">
+										<img class="rounded-x" src="assets/img/default.png" alt="Rbfwyfky normal" data-loaded="true">
+										<span>Level</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/641" data-trigger="hover" data-placement="auto" data-original-title="SecondMarket" data-content="Helps private companies and funds streamline complex transaction workflows and better communicate with stakeholders">
+										<img class="rounded-x" src="assets/img/default.png" alt="Logo secondmarket" data-loaded="true">
+										<span>SecondMarket</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/982" data-trigger="hover" data-placement="auto" data-original-title="OpenGamma" data-content="Real-Time Risk Analytics and Market Risk Management">
+										<img class="rounded-x" src="assets/img/default.png" alt="Opengamma device normal" data-loaded="true">
+										<span>OpenGamma</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/645" data-trigger="hover" data-placement="auto" data-original-title="Holvi" data-content="For makers and doers Forget your bank">
+										<img class="rounded-x" src="assets/img/default.png" alt="Kscu5o3z normal" data-loaded="true">
+										<span>Holvi</span>
+										</a>
 									</div>
 									<div class="category">
-									<h4>Banks</h4>
-									<a target="blank" rel="popover" href="/companies/665" data-trigger="hover" data-placement="auto" data-original-title="JP Morgan Chase" data-content="An American multinational banking and financial services holding company, and the largest bank in the United States">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1140/JPMorgan.png" alt="Jpmorgan" data-loaded="true">
-									<span>JP Morgan Chase</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/664" data-trigger="hover" data-placement="auto" data-original-title="Wells Fargo" data-content="An American multinational banking and financial services holding company which is headquartered in San Francisco, California, with "hubquarters" throughout the country">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1502/Wells_Fargo_logo.jpeg" alt="Wells fargo logo" data-loaded="true">
-									<span>Wells Fargo</span>
-									</a>
-									<a target="blank" rel="popover" href="/companies/670" data-trigger="hover" data-placement="auto" data-original-title="BNP Paribas" data-content="A French bank and financial services company with headquarters in Paris, and a global headquarters in London">
-									<img class="rounded-x" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/1492/BNP_Paribas_logo.png" alt="Bnp paribas logo" data-loaded="true">
-									<span>BNP Paribas</span>
-									</a>							
+										<h3>Banks</h3>
+										<a target="blank" rel="popover" href="/companies/665" data-trigger="hover" data-placement="auto" data-original-title="JP Morgan Chase" data-content="An American multinational banking and financial services holding company, and the largest bank in the United States">
+										<img class="rounded-x" src="assets/img/default.png" alt="Jpmorgan" data-loaded="true">
+										<span>JP Morgan Chase</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/664" data-trigger="hover" data-placement="auto" data-original-title="Wells Fargo" data-content="An American multinational banking and financial services holding company which is headquartered in San Francisco, California, with "hubquarters" throughout the country">
+										<img class="rounded-x" src="assets/img/default.png" alt="Wells fargo logo" data-loaded="true">
+										<span>Wells Fargo</span>
+										</a>
+										<a target="blank" rel="popover" href="/companies/670" data-trigger="hover" data-placement="auto" data-original-title="BNP Paribas" data-content="A French bank and financial services company with headquarters in Paris, and a global headquarters in London">
+										<img class="rounded-x" src="assets/img/default.png" alt="Bnp paribas logo" data-loaded="true">
+										<span>BNP Paribas</span>
+										</a>
+									</div>							
 								</div>
 							</div>
 						</div>
@@ -294,124 +341,126 @@
     </div>
     <!--=== End Content Part ===-->
 
-<!--=== Footer ===-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- About -->
-                    <div class="headline"><h4>About</h4></div>  
-                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
-                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
-                    <!-- End About -->
-
-                    <!-- Monthly Newsletter -->
-                    <div class="headline"><h4>Newsletter</h4></div> 
-                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
-                    <form class="footer-subsribe">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Email Address">                            
-                            <span class="input-group-btn">
-                                <button class="btn-u" type="button">Subscribe</button>
-                            </span>
-                        </div>                  
-                    </form>                         
-                    <!-- End Monthly Newsletter -->
-                </div><!--/col-md-4-->  
-                
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- Recent Blogs -->
-                    <div class="posts">
-                        <div class="headline"><h4>Recent Tweets</h4></div>
-                        <dl class="dl-horizontal">
-                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
-                            <dd>
-                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
-                            <dd>
-                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
-                            <dd>
-                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
-                            <dd>
-                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
-                            </dd>
-                        </dl>
-                    </div>
-                    <!-- End Recent Blogs -->                    
-                </div><!--/col-md-4-->
-
-                <div class="col-md-4">
-                    <!-- Contact Us -->
-                    <div class="headline"><h4>Send Feedback</h4></div> 
-                    <form class="quick-contact md-margin-bottom-40">
-                        <label>Name</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Email <span class="color-red">*</span></label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Message</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <textarea class="form-control" rows="8"></textarea>
-                            </div>                
-                        </div>
-                        
-                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
-                    </form>
-                    <!-- End Contact Us -->
-                </div><!--/col-md-4-->
-            </div>
-        </div> 
-    </div>     
-    <!--=== End Footer ===-->
-
-    <div class="copyright">
+    <div id="footer-default" class="footer-default">
+        <!--=== Footer ===-->
+        <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">                     
-                        <p>
-                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-                    <!-- Social Links -->
-                    <div class="col-md-6">  
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
-                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
-                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
-                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- About -->
+                        <div class="headline"><h4>About</h4></div>  
+                        <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                        <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                        <!-- End About -->
+
+                        <!-- Monthly Newsletter -->
+                        <div class="headline"><h4>Newsletter</h4></div> 
+                        <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                        <form class="footer-subsribe">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">                            
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Subscribe</button>
+                                </span>
+                            </div>                  
+                        </form>                         
+                        <!-- End Monthly Newsletter -->
+                    </div><!--/col-md-4-->  
+                    
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- Recent Blogs -->
+                        <div class="posts">
+                            <div class="headline"><h4>Recent Tweets</h4></div>
+                            <dl class="dl-horizontal">
+                                <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                                <dd>
+                                    <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- End Recent Blogs -->                    
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <!-- Contact Us -->
+                        <div class="headline"><h4>Send Feedback</h4></div> 
+                        <form class="quick-contact md-margin-bottom-40">
+                            <label>Name</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Email <span class="color-red">*</span></label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Message</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>                
+                            </div>
+                            
+                            <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                        </form>
+                        <!-- End Contact Us -->
+                    </div><!--/col-md-4-->
                 </div>
             </div> 
-    </div><!--/copyright-->
+        </div>    
+        <!--=== End Footer ===-->
+
+        <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">                     
+                            <p>
+                                2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col-md-6">  
+                            <ul class="social-icons pull-right">
+                                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social Links -->
+                    </div>
+                </div> 
+        </div><!--/copyright-->
+    </div>
 </div><!--/End Wrapepr-->
 
 <!-- Modal -->
 <div class="modal fade" id="crunch-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content profile">
       <div class="profile-blog">
             <img alt="" src="https://craft-production.s3.amazonaws.com/uploads/attachment/file/930/aMvssWiT_normal.jpeg" class="rounded-x">
             <div class="name-location">
@@ -464,18 +513,21 @@
 </div>
 
 <!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
 <!-- JS Implementing Plugins -->           
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
 <!-- JS Page Level -->           
 <script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/form-sliders.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
+        FormSliders.initFormSliders();
         $('.category a').popover({
             delay: {show: 50, hide: 100}
          });

@@ -15,26 +15,31 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- CSS Global Compulsory -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-default.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/plugins/jqcloud.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+    <link href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css" rel="stylesheet">
+    <link href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
     <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
-    <!-- CSS Page Style -->    
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="assets/css/blocks.css">  
     <link rel="stylesheet" href="assets/css/pages/page_job_inner.css">
     <link rel="stylesheet" href="assets/css/pages/portfolio-v2.css">
     <link rel="stylesheet" href="assets/css/pages/blog_masonry_3col.css">
     <link rel="stylesheet" href="assets/css/pages/profile.css">
-    <link rel="stylesheet" href="assets/css/blocks.css">
 
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="assets/css/themes/purple.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-colors/purple.css" id="style_color">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -44,21 +49,7 @@
 
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <!-- Topbar Navigation -->
-                <ul class="loginbar pull-right"> 
-                    <li><i class="fa fa-user"></i> <a href="#">Login</a></li>
-                    <li class="topbar-devider"></li>
-                    <li><a href="#">Register</a></li> 
-                </ul>
-                <!-- End Topbar Navigation -->
-            </div>
-        </div>
-        <!-- End Topbar -->
-    
+    <div class="header">   
         <!-- Navbar -->
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -84,7 +75,20 @@
                                 </span>
                             </div>   
                         </li>
-                        <li><button class="btn-u" type="">Browse Companies</button></li>
+                        <li>
+                            <ul class="social-icons pull-right hidden-xs">
+                                <li>
+                                <a class="rounded-x social_googleplus" title="Google Plus" href="https://plus.google.com/111011203265073947311/posts"></a>
+                                </li>
+                                <li>
+                                <a class="rounded-x social_twitter" title="Twitter" href="https://twitter.com/craftdotco"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://blog.craft.co/">Blog</a>
+                        </li>
+                        <li><a class="btn-u explore-btn" href="#">Learn more</a></li>
                         <!-- End Search Block -->
                     </ul>
                 </div><!--/navbar-collapse-->
@@ -112,11 +116,15 @@
                 <!-- Left Inner -->
                 <div class="col-md-7">
                     <div class="left-inner md-margin-bottom-20">
-                        <img class="company-logo" src="assets/img/temp/amazon4.png" alt="">
-                        <a href="#"><i class="position-top fa fa-globe"></i></a>
+                        <img class="company-logo" src="https://pbs.twimg.com/profile_images/528320705125838848/q7o83VPn.jpeg" alt="">
+                        <div class=position-top>
+                            <a href="#"><i class="fa fa-globe"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><span class="cb">cb</span></a>
+                        </div>
                         <div class="overflow-h">
                             <p class="hex"><span class="label label-blue">Public</span></p>
-                            <p class="hex">Worldwide, 117,300 Employees, HQ in Seattle, United States</p>
                             <p>American international electronic commerce company and the world's largest online retailer.</p>
                         </div>    
                         
@@ -169,7 +177,7 @@
                             <div id="charts-1" class="tab-pane fade active in">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                    	<div class="service-block-v3 servive-block-u">
+                                    	<div class="service-block-v3 service-block-u">
                                             <i class="icon-users"></i>
                                             <span class="service-heading">Employees</span>
                                             <span class="counter">117,300</span>
@@ -196,7 +204,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="service-block-v3 servive-block-blue">
+                                        <div class="service-block-v3 service-block-blue">
                                             <i class="fa fa-twitter"></i>
                                             <span class="service-heading">Twitter Followers</span>
                                             <span class="counter">2,532</span>
@@ -231,7 +239,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="service-block-v3 servive-block-blue facebook">
+                                        <div class="service-block-v3 facebook">
                                             <i class="fa fa-facebook"></i>
                                             <span class="service-heading">Facebook Likes</span>
                                             <span class="counter">4,644</span>
@@ -279,22 +287,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <hr>
-
-                    <h2>Topics</h2>
-                    <div id="tagcloud"></div>
-                    <p class="text-right tagcopy">
-                        <small>Powered by</small>
-                        <a href="#"><img src="assets/img/logo_brandwatch.png"></a>
-                    </p>
-
-                    <hr>
-                    
-                    <ul class="list-unstyled save-job">
-                        <li><i class="fa fa-plus"></i> <a href="#">Add to list</a></li>
-                        <li><i class="fa fa-pencil"></i> <a href="#">Note</a></li>
-                    </ul>
                 </div>
                 <!-- End Right Inner -->
             </div>    
@@ -410,83 +402,20 @@
             <div class="title-box-v2">
                 <h2>Jobs</h2>
             </div>
-            <div class="jobs-table">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th class="wide">Title</th>
-                            <th class="hidden-xs">Description</th>
-                            <th>Tags</th>
-                            <th>Reports to:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">UX Designer</a></td>
-                            <td class="hidden-xs">Amazon Lab126 is an inventive research and development company that designs and engineers high-profile devices like the Kindle family of products. Lab126 began in 2004 as a subsidiary of Amazon.com, Inc. Since then, we have worked to produce best-selling tablets with breakthrough hardware technology as well as e-readers that have revolutionized reading. What will you help us…</td>
-                            <td><span class="label label-blue">Design</span><span class="label label-green">Technology</span><span class="label label-light">US, CA, San Francisco</span></td>
-                            <td>
-                                <div class="relates">
-                                    <strong>Arya Stark</strong>
-                                    Creative Director
-                                    <div>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-user"></i></a>
-                                    </div>
-                                </div>
-                            </td>                       
-                        </tr>
-                        <tr>
-                            <td><a href="#">UX Lab - UX Designer</a></td>
-                            <td class="hidden-xs">Amazon continues to grow its ecosystem of devices, services, and experiences. This creates new opportunities for customers to connect with the Amazon brand in a variety of ways that demand deeper consideration. The UX Lab (UXL) takes a hybrid approach to innovation, combining the analytical with the creative to envision and prototype products and services. What will you help us… </td>
-                            <td><span class="label label-blue">Design</span><span class="label label-green">Technology</span><span class="label label-light">US, CA, San Francisco</span></td>
-                            <td>
-                                <div class="relates">
-                                    <img src="assets/img/temp/snow.jpg" alt="">
-                                    <strong>John Snow</strong>
-                                    Lead designer
-                                    <div>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-user"></i></a>
-                                    </div>
-                                </div>
-                            </td>                        
-                        </tr>
-                        <tr>
-                            <td><a href="#">UX Design Manager</a></td>
-                            <td class="hidden-xs">Amazon Music is looking for dynamic, driven Designers to join us in creating the preeminent digital music user experience. We develop the software for the Amazon MP3 store and the Amazon Cloud Player. Besides our web presence, we also provide applications for Android, iOS, Palm, Blackberry and of course the Kindle Fire product line. We also partner up with external companies such…</td>
-                            <td><span class="label label-blue">Design</span><span class="label label-green">Technology</span><span class="label label-light">US, CA, San Francisco</span></td>
-                            <td>
-                                <div class="relates">
-                                    <strong>Arya Stark</strong>
-                                    Creative Director
-                                    <div>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </td>                        
-                        </tr>
-                        <tr>
-                            <td><a href="#">Head of Design, Amazon Instant Video</a></td>
-                            <td class="hidden-xs">Amazon Instant Video is the Video on Demand service of the online retailer Amazon. Respecting Amazon’s service mentality, Amazon Instant Video offers customers the ability to watch their favorite movies and TV shows any way they want: either to rent or buy or as part of their streaming subscription. As a part of Amazon Instant Video you work in a very young and dynamic business…</td>
-                            <td><span class="label label-blue">Design</span><span class="label label-green">Technology</span><span class="label label-light">UK, London</span></td>
-                            <td>
-                                <div class="relates">
-                                    <img src="assets/img/temp/snow.jpg" alt="">
-                                    <strong>John Snow</strong>
-                                    Lead designer
-                                    <div>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-user"></i></a>
-                                    </div>
-                                </div>
-                            </td>                           
-                        </tr>
-                    </tbody>
-                </table>
-            </div>         
+            <div class="row job-links text-center margin-bottom-20">
+                <a href="#"><span>Core Engineer</span><i>Engineering, Auckland</i></a>
+                <a href="#"><span>Front of House Manager</span><i>Operations, Auckland</i></a>
+                <a href="#"><span>Front-End Engineer</span><i>Sales, Berlin</i></a>
+                <a href="#"><span>Product Analyst - 6 months FTC</span><i>Operations, Auckland</i></a>
+                <a href="#"><span>Product Designer</span><i>Sales, Berlin</i></a>
+                <a href="#"><span>iOS/Mobile Engineers</span><i>Operations, Auckland</i></a>
+                <a href="#"><span>Director Customer Success - EMEA</span><i>Customer Success, Berlin</i></a>
+                <a href="#"><span>Multilingual Retail Solutions Specialist</span><i>Sales, Berlin</i></a>
+                <a href="#"><span>Channel Account Manager</span><i>Operations, Auckland</i></a>
+                <a href="#"><span>Field Marketing Manager</span><i>Engineering, Auckland</i></a>
+                <a href="#"><span>Product Designer</span><i>Engineering, Auckland</i></a>
+            </div>
+            <div class="text-center"><a href="#" class="load-jobs btn-u">Load more</a></div>   
         </div>
         
     </div>
@@ -638,53 +567,6 @@
     </div>    
     <!--=== End Contacts ===-->
 
-    <div class="block-level-v2">
-        <div class="container">
-            <i class="center-icon rounded-x fa fa-newspaper-o"></i>
-            <div class="title-box-v2">
-                <h2>News</h2>
-            </div>
-            <div class="magazine-news">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="newsblock">
-                            <h3>
-                            <a href="#">Ogilvy CommonHealth Worldwide Takes Home Silver at PM360's Pharma Choice Awards</a>
-                            </h3>
-                            <div class="by-author">
-                            <strong>Marketwire</strong>
-                            <span>/ January 14, 2015 22:10</span>
-                            </div>
-                            <p>PARSIPPANY, NJ--(Marketwired - Jan 14, 2015) - Ogilvy CommonHealth Worldwide ( www.ogilvychww.com ), the health behavior experts of Ogilvy & Mather ( www.ogilvy.com ), announced the agency has been recognized as the Silver winner in the DTC/DTP category of the 2014 PM360 Pharma Choice Awards for their work created to support a medication used to treat multiple sclerosis.</p>
-                        </div>
-                        <hr>
-                        <div class="newsblock">
-                            <h3>
-                            <a href="#">The Battle Of The Brands: Winners And Losers In The Culture Wars</a>
-                            </h3>
-                            <div class="by-author">
-                            <strong>PR Newswire via Yahoo! Finance</strong>
-                            <span>/ December 17, 2014 19:00</span>
-                            </div>
-                            <p>LOS ANGELES, Dec. 17, 2014 /PRNewswire/ -- Added Value reveals the cultural vibrancy of over 70 brands from across fourteen sectors in its fourth annual USA Cultural Traction™ 2014 report released today. ...</p>
-                        </div>
-                        <hr>
-                        <div class="newsblock">
-                            <h3>
-                            <a href="#">Ogilvy CommonHealth Worldwide Wins Silver and 33 Awards of Excellence at the 2014 Rx Club Show Awards</a>
-                            </h3>
-                            <div class="by-author">
-                            <strong>Marketwired via Yahoo! Finance</strong>
-                            <span>/ November 21, 2014 19:02</span>
-                            </div>
-                            <p>Ogilvy CommonHealth Worldwide , the health behavior experts of Ogilvy & Mather , today announced the network won Silver in the "DTC Print Campaign" category and 33 of its entries received Awards ...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--=== Begin Company Life ===-->
     <div class="block-level-v2 life">
         <div class="container">
@@ -738,7 +620,7 @@
             </div><!--/flexslider-->
 
                 <!--=== Owl Clients v1 ===-->
-                <div class="owl-clients-v2 margin-bottom-20">
+                <div class="owl-clients-v2 margin-bottom-30">
                     <div class="item">
                         <img src="http://41.media.tumblr.com/e18516290cd367d919ad9e500b500660/tumblr_nogeazT6i81sea87uo1_1280.jpg" alt="">
                     </div>
@@ -1002,118 +884,120 @@
         </div>
     </div>
 
-    <!--=== Footer ===-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- About -->
-                    <div class="headline"><h4>About</h4></div>  
-                    <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
-                    <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
-                    <!-- End About -->
-
-                    <!-- Monthly Newsletter -->
-                    <div class="headline"><h4>Newsletter</h4></div> 
-                    <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
-                    <form class="footer-subsribe">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Email Address">                            
-                            <span class="input-group-btn">
-                                <button class="btn-u" type="button">Subscribe</button>
-                            </span>
-                        </div>                  
-                    </form>                         
-                    <!-- End Monthly Newsletter -->
-                </div><!--/col-md-4-->  
-                
-                <div class="col-md-4 md-margin-bottom-40">
-                    <!-- Recent Blogs -->
-                    <div class="posts">
-                        <div class="headline"><h4>Recent Tweets</h4></div>
-                        <dl class="dl-horizontal">
-                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
-                            <dd>
-                                <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
-                            <dd>
-                                <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
-                            <dd>
-                                <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
-                            </dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                        <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
-                            <dd>
-                                <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
-                            </dd>
-                        </dl>
-                    </div>
-                    <!-- End Recent Blogs -->                    
-                </div><!--/col-md-4-->
-
-                <div class="col-md-4">
-                    <!-- Contact Us -->
-                    <div class="headline"><h4>Send Feedback</h4></div> 
-                    <form class="quick-contact md-margin-bottom-40">
-                        <label>Name</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Email <span class="color-red">*</span></label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <input type="text" class="form-control">
-                            </div>                
-                        </div>
-                        
-                        <label>Message</label>
-                        <div class="row margin-bottom-20">
-                            <div class="col-md-12 col-md-offset-0">
-                                <textarea class="form-control" rows="8"></textarea>
-                            </div>                
-                        </div>
-                        
-                        <p><button class="btn-u" type="submit">Send Feedback</button></p>
-                    </form>
-                    <!-- End Contact Us -->
-                </div><!--/col-md-4-->
-            </div>
-        </div> 
-    </div>    
-    <!--=== End Footer ===-->
-
-    <div class="copyright">
+    <div id="footer-default" class="footer-default">
+        <!--=== Footer ===-->
+        <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">                     
-                        <p>
-                            2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-                    <!-- Social Links -->
-                    <div class="col-md-6">  
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
-                            <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
-                            <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
-                            <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
-                        </ul>
-                    </div>
-                    <!-- End Social Links -->
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- About -->
+                        <div class="headline"><h4>About</h4></div>  
+                        <p>Craft is an information platform providing data and insights into dynamic sectors, companies and open positions. Our goal is to provide Context around job opportunities, and help professionals evaluate and compare different paths and opportunities.</p>
+                        <p class="margin-bottom-25 md-margin-bottom-40">Our initial focus is in the Financial Technology (“FinTech”) sector.</p>    
+                        <!-- End About -->
+
+                        <!-- Monthly Newsletter -->
+                        <div class="headline"><h4>Newsletter</h4></div> 
+                        <p>Subscribe to our newsletter and stay up to date with the latest news and featured jobs!</p>
+                        <form class="footer-subsribe">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">                            
+                                <span class="input-group-btn">
+                                    <button class="btn-u" type="button">Subscribe</button>
+                                </span>
+                            </div>                  
+                        </form>                         
+                        <!-- End Monthly Newsletter -->
+                    </div><!--/col-md-4-->  
+                    
+                    <div class="col-md-4 md-margin-bottom-40">
+                        <!-- Recent Blogs -->
+                        <div class="posts">
+                            <div class="headline"><h4>Recent Tweets</h4></div>
+                            <dl class="dl-horizontal">
+                                <dt><a href="#"><img alt="" src="assets/img/temp/amazon6.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">5 brilliant strategies that make @Honda one of the world's most innovative companies - by @JRothfeder http://read.bi/1Auj6jZ</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon7.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">CEO Who Sold http://Diapers.com  to Amazon Raises $55 Million To Challenge Amazon Again / by @DelRey / http://on.recode.net/1zqynky</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon8.png"></a></dt>
+                                <dd>
+                                    <p><a href="#">Great opportunity for anyone in Mobile AdTech in Berlin with @GoLiquidM http://liquidm.com/careers/  http://bit.ly/XaBqzh</a></p> 
+                                </dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                            <dt><a href="#"><img alt="" src="assets/img/temp/amazon9.jpg"></a></dt>
+                                <dd>
+                                    <p><a href="#">30 Thought Leaders in Data Visualization http://buff.ly/1x7VBZv  via @datamadesimple</a></p> 
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- End Recent Blogs -->                    
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <!-- Contact Us -->
+                        <div class="headline"><h4>Send Feedback</h4></div> 
+                        <form class="quick-contact md-margin-bottom-40">
+                            <label>Name</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Email <span class="color-red">*</span></label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <input type="text" class="form-control">
+                                </div>                
+                            </div>
+                            
+                            <label>Message</label>
+                            <div class="row margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>                
+                            </div>
+                            
+                            <p><button class="btn-u" type="submit">Send Feedback</button></p>
+                        </form>
+                        <!-- End Contact Us -->
+                    </div><!--/col-md-4-->
                 </div>
             </div> 
-    </div><!--/copyright-->
+        </div>    
+        <!--=== End Footer ===-->
+
+        <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">                     
+                            <p>
+                                2014 &copy; All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col-md-6">  
+                            <ul class="social-icons pull-right">
+                                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social Links -->
+                    </div>
+                </div> 
+        </div><!--/copyright-->
+    </div>
 </div><!--/End Wrapper-->
 
 <!-- Modal -->
@@ -1151,19 +1035,17 @@
 </div>
 
 <!-- JS Global Compulsory -->           
-<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
 <script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
 <script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="assets/plugins/masonry/jquery.masonry.min.js"></script>
-<script type="text/javascript" src="assets/js/plugins/jqcloud-1.0.4.min.js"></script>
 <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
 
@@ -1181,36 +1063,13 @@
         }
     });
 </script>
-<script type="text/javascript">
-      /*!
-       * Create an array of word objects, each representing a word in the cloud
-       */
-      var word_array = [
-          {text: "Oil", weight: 15},
-          {text: "Reuters", weight: 26, link: "http://jquery.com/"},
-          {text: "Guantanamo Bay", weight: 6, html: {title: "I can haz any html attribute"}},
-          {text: "Cuba", weight: 7},
-          {text: "Facebook", weight: 20},
-          {text: "Airlines", weight: 13, link: "http://jquery.com/"},
-          {text: "College Sports", weight: 18, html: {title: "I can haz any html attribute"}},
-          {text: "Memphis Tigers", weight: 3},
-          {text: "Most Expensive", weight: 5},
-          {text: "2014", weight: 11},
-          {text: "Facebook", weight: 37},
-          {text: "Airlines", weight: 34, link: "http://jquery.com/"},
-          {text: "Features", weight: 12, html: {title: "I can haz any html attribute"}},
-          {text: "Homes", weight: 7}
-      ];
-    </script>
+
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
         App.initCounter();
         App.initSliders();
-        OwlCarousel.initOwlCarousel();
-        $("#tagcloud").jQCloud(word_array, {
-          height: 200
-        });
+        OwlCarousel.initOwlCarousel()
     });
 </script>
 <!--[if lt IE 9]>
