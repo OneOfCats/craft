@@ -1059,12 +1059,15 @@ body.error .wrapper {
     border: none;
 }
 
-.job-links a {
-    color: #3498db;
+.job-links .job {
     background: rgba( 255, 255, 255, 0.5);
     padding: 10px 15px;
     margin: 7px 5px;
     display: inline-block;
+}
+
+.job-links .job a {
+    color: #3498db;
 }
 
 .job-links a:hover span {
@@ -1072,17 +1075,31 @@ body.error .wrapper {
     color: #3498db;
 }
 
-.job-links a:hover {
+.job-links .job:hover {
     background: rgba( 255, 255, 255, 1);
 }
 
-.job-links a i {
+.job-links .job i {
     display: block;
     color: #555;
 }
 
-.job-links a:hover i {
-    color: #555;
+.job-links .job .favorite {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 17px;
+    line-height: 17px;
+    margin-top: 5px;
+    padding: 0 2px;
+}
+
+.job-links .job .favorite i {
+    color: #ccc;
+}
+
+.job-links .job .favorite:hover i, .job-links .job .favorite.active i {
+    color: #521b92;
 }
 
 .signup-moon {
